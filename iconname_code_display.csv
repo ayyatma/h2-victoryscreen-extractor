@@ -1,0 +1,528 @@
+icon_filename,code_name,trait_name,display_text
+Aphrodite_27.png,Boon_Aphrodite_27,AphroditeWeaponBoon,Flutter Strike
+Aphrodite_28.png,Boon_Aphrodite_28,AphroditeSprintBoon,Passion Rush
+Aphrodite_29.png,Boon_Aphrodite_29,AphroditeCastBoon,Rapture Ring
+Aphrodite_30.png,Boon_Aphrodite_30,AphroditeSpecialBoon,Flutter Flourish
+Aphrodite_31.png,Boon_Aphrodite_31,RandomStatusBoon,Nervous Wreck
+Aphrodite_32.png,Boon_Aphrodite_32,FocusRawDamageBoon,Secret Crush
+Aphrodite_33.png,Boon_Aphrodite_33,ElementalDodgeBoon,Wispy Wiles
+Aphrodite_34.png,Boon_Aphrodite_34,DoorHealToFullBoon,Healthy Rebound
+Aphrodite_35.png,Boon_Aphrodite_35,HealthRewardBonusBoon,Spiritual Affirmation
+Aphrodite_36.png,Boon_Aphrodite_36,WeakPotencyBoon,Broken Resolve
+Aphrodite_37.png,Boon_Aphrodite_37,ManaBurstBoon,Heart Breaker
+Aphrodite_38.png,Boon_Aphrodite_38,HighHealthOffenseBoon,Shameless Attitude
+Aphrodite_40.png,Boon_Aphrodite_40,WeakVulnerabilityBoon,Sweet Surrender
+Aphrodite_41.png,Boon_Aphrodite_41,CharmCrowdBoon,Ecstatic Obsession
+Aphrodite_42.png,Boon_Aphrodite_42,AphroditeManaBoon,Glamour Gain
+Apollo_27.png,Boon_Apollo_27,ApolloWeaponBoon,Nova Strike
+Apollo_28.png,Boon_Apollo_28,ApolloSprintBoon,Blinding Rush
+Apollo_29.png,Boon_Apollo_29,ApolloCastBoon,Solar Ring
+Apollo_30.png,Boon_Apollo_30,ApolloSpecialBoon,Nova Flourish
+Apollo_31.png,Boon_Apollo_31,ApolloExCastBoon,Prominence Flare
+Apollo_33.png,Boon_Apollo_33,ApolloRetaliateBoon,Light Smite
+Apollo_34.png,Boon_Apollo_34,ElementalRallyBoon,Self Healing
+Apollo_35.png,Boon_Apollo_35,ApolloManaBoon,Lucid Gain
+Apollo_36.png,Boon_Apollo_36,PerfectDamageBonusBoon,Perfect Image
+Apollo_37.png,Boon_Apollo_37,ApolloBlindBoon,Back Burner
+Apollo_39.png,Boon_Apollo_39,BlindChanceBoon,Dazzling Display
+Apollo_40.png,Boon_Apollo_40,DoubleExManaBoon,Exceptional Talent
+Apollo_41.png,Boon_Apollo_41,StormSpawnBoon,Tropical Cyclone
+Apollo_42.png,Boon_Apollo_42,ManaBurstCountBoon,Sunny Disposition
+Apollo_43.png,Boon_Apollo_43,BlindClearBoon,Rude Awakening
+Apollo_44.png,Boon_Apollo_44,RaiseDeadBoon,Sun Worshiper
+Apollo_45.png,Boon_Apollo_45,DoubleStrikeChanceBoon,Extra Dose
+Arachne_01.png,Boon_Arachne_01,AgilityCostume,Lavender Dress
+Arachne_02.png,Boon_Arachne_02,ManaCostume,Azure Dress
+Arachne_03.png,Boon_Arachne_03,VitalityCostume,Emerald Dress
+Arachne_04.png,Boon_Arachne_04,EscalatingCostume,Crimson Dress
+Arachne_05.png,Boon_Arachne_05,SpellCostume,Moonlight Dress
+Arachne_06.png,Boon_Arachne_06,HighArmorCostume,Onyx Dress
+Arachne_07.png,Boon_Arachne_07,CastDamageCostume,Fuchsia Dress
+Arachne_08.png,Boon_Arachne_08,IncomeCostume,Gilded Dress
+Ares_27.png,Boon_Ares_27,AresWeaponBoon,Vicious Strike
+Ares_28.png,Boon_Ares_28,AresSprintBoon,Stabbing Rush
+Ares_29.png,Boon_Ares_29,AresCastBoon,Sword Ring
+Ares_30.png,Boon_Ares_30,AresSpecialBoon,Vicious Flourish
+Ares_31.png,Boon_Ares_31,AresManaBoon,Grisly Gain
+Ares_32.png,Boon_Ares_32,AresExCastBoon,Meat Grinder
+Ares_33.png,Boon_Ares_33,RendBloodDropBoon,Profuse Bleeding
+Ares_34.png,Boon_Ares_34,AresStatusDoubleDamageBoon,Grievous Blow
+Ares_35.png,Boon_Ares_35,OmegaDelayedDamageBoon,Cut Above
+Ares_36.png,Boon_Ares_36,MissingHealthCritBoon,Mutual Destruction
+Ares_38.png,Boon_Ares_38,LowHealthLifestealBoon,Blood Spree
+Ares_39.png,Boon_Ares_39,BloodDropRevengeBoon,Visceral Impact
+Ares_40.png,Boon_Ares_40,ElementalOlympianDamageBoon,Rallying Cry
+Ares_41.png,Boon_Ares_41,DoubleBloodDropBoon,Sanguinary Savor
+Ares_42.png,Boon_Ares_42,SelfCastBoon,Hostile Environment
+Ares_43.png,Boon_Ares_43,AutoRevengeBoon,Heinous Affront
+Ares_44.png,Boon_Ares_44,BloodRetentionBoon,Universal Donor
+Ares_45.png,Boon_Ares_45,RapidSwordBoon,Coffin Nail
+Ares_46.png,Boon_Ares_46,DoubleSplashBoon,Arterial Spray
+Ares_47.png,Boon_Ares_47,DoubleSwordBoon,Cutting Edge
+Ares_48.png,Boon_Ares_48,FireballRendBoon,Fourth Degree
+Ares_49.png,Boon_Ares_49,BloodManaBurstBoon,Carnal Pleasure
+Ares_50.png,Boon_Ares_50,DummyBloodDisplayBoon,
+Artemis_27.png,Boon_Artemis_27,CritBonusBoon,Pressure Points
+Artemis_28.png,Boon_Artemis_28,DashOmegaBuffBoon,Shadow Pounce
+Artemis_29.png,Boon_Artemis_29,HighHealthCritBoon,Vital Signs
+Artemis_30.png,Boon_Artemis_30,InsideCastCritBoon,Lethal Snare
+Artemis_31.png,Boon_Artemis_31,OmegaCastVolleyBoon,Easy Shot
+Artemis_32.png,Boon_Artemis_32,SupportingFireBoon,Support Fire
+Artemis_33.png,Boon_Artemis_33,TimedCritVulnerabilityBoon,Death Warrant
+Artemis_34.png,Boon_Artemis_34,FocusCritBoon,Killing Stroke
+Artemis_35.png,Boon_Artemis_35,SorceryCritBoon,Whispered Prayer
+Athena_27.png,Boon_Athena_27,AthenaProjectileBoon,Phalanx Shot
+Athena_28.png,Boon_Athena_28,DeathDefianceRefillBoon,Renewed Faith
+Athena_29.png,Boon_Athena_29,FocusLastStandBoon,Stalwart Stand
+Athena_30.png,Boon_Athena_30,InvulnerabilityCastBoon,Mental Block
+Athena_31.png,Boon_Athena_31,InvulnerabilityDashBoon,Divine Dash
+Athena_32.png,Boon_Athena_32,RetaliateInvulnerabilityBoon,Defensive Posture
+Athena_33.png,Boon_Athena_33,ManaSpearBoon,Righteous Pike
+Athena_34.png,Boon_Athena_34,OlympianSpellCountBoon,Task Force
+Chaos_27.png,Boon_Chaos_27,ChaosHealthCurse,Atrophic
+Chaos_28.png,Boon_Chaos_28,ChaosNoMoneyCurse,Pauper's
+Chaos_29.png,Boon_Chaos_29,ChaosHiddenRoomRewardCurse,Enshrouded
+Chaos_30.png,Boon_Chaos_30,ChaosDamageCurse,Excruciating
+Chaos_31.png,Boon_Chaos_31,ChaosPrimaryAttackCurse,Maimed
+Chaos_32.png,Boon_Chaos_32,ChaosSecondaryAttackCurse,Flayed
+Chaos_33.png,Boon_Chaos_33,ChaosDeathWeaponCurse,Caustic
+Chaos_34.png,Boon_Chaos_34,ChaosSpeedCurse,Slothful
+Chaos_35.png,Boon_Chaos_35,ChaosExAttackCurse,Gagged
+Chaos_36.png,Boon_Chaos_36,ChaosCommonCurse,Ordinary
+Chaos_37.png,Boon_Chaos_37,ChaosCastCurse,Addled
+Chaos_38.png,Boon_Chaos_38,ChaosDashCurse,Neurotic
+Chaos_39.png,Boon_Chaos_39,ChaosManaFocusCurse,Fixated
+Chaos_40.png,Boon_Chaos_40,ChaosRestrictBoonCurse,Rejected
+Chaos_41.png,Boon_Chaos_41,ChaosStunCurse,Paralyzing
+Chaos_42.png,Boon_Chaos_42,ChaosTimeCurse,Expiring
+Chaos_43.png,Boon_Chaos_43,ChaosMetaUpgradeCurse,Barren
+Chaos_44.png,Boon_Chaos_44,ChaosWeaponBlessing,Strike
+Chaos_45.png,Boon_Chaos_45,ChaosSpecialBlessing,Flourish
+Chaos_46.png,Boon_Chaos_46,ChaosCastBlessing,Chasm
+Chaos_47.png,Boon_Chaos_47,ChaosHealthBlessing,Soul
+Chaos_48.png,Boon_Chaos_48,ChaosRarityBlessing,Favor
+Chaos_49.png,Boon_Chaos_49,ChaosMoneyBlessing,Affluence
+Chaos_50.png,Boon_Chaos_50,ChaosManaBlessing,Mind
+Chaos_51.png,Boon_Chaos_51,ChaosManaOverTimeBlessing,Will
+Chaos_52.png,Boon_Chaos_52,ChaosExSpeedBlessing,Revelation
+Chaos_53.png,Boon_Chaos_53,ChaosElementalBlessing,Creation
+Chaos_54.png,Boon_Chaos_54,ChaosManaCostBlessing,Talent
+Chaos_55.png,Boon_Chaos_55,ChaosSpeedBlessing,Celerity
+Chaos_56.png,Boon_Chaos_56,ChaosDoorHealBlessing,Revival
+Chaos_57.png,Boon_Chaos_57,ChaosHarvestBlessing,Discovery
+Chaos_58.png,Boon_Chaos_58,ChaosOmegaDamageBlessing,Chant
+Chaos_59.png,Boon_Chaos_59,ChaosLastStandBlessing,Defiance
+Circe_01.png,Boon_Circe_01,ArcanaRarityTrait,Lapis Lazuli Insight
+Circe_02.png,Boon_Circe_02,CirceEnlargeTrait,Word of Greater Girth
+Circe_03.png,Boon_Circe_03,CirceShrinkTrait,Word of Smaller Stature
+Circe_04.png,Boon_Circe_04,DoubleFamiliarTrait,Primal Psychic Connection
+Circe_05.png,Boon_Circe_05,HealAmplifyTrait,Old Herbal Remedy
+Circe_06.png,Boon_Circe_06,RandomArcanaTrait,Red Citrine Divination
+Circe_07.png,Boon_Circe_07,RemoveShrineTrait,Black Night Banishment
+Circe_08.png,Boon_Circe_08,CirceSorceryDamageBoon,Hymn to the Eye of Night
+Circe_09.png,Boon_Circe_09,ExPolymorphBoon,Turning to a Simple Form
+Demeter_27.png,Boon_Demeter_27,DemeterWeaponBoon,Ice Strike
+Demeter_28.png,Boon_Demeter_28,DemeterSprintBoon,Frigid Rush
+Demeter_29.png,Boon_Demeter_29,DemeterCastBoon,Arctic Ring
+Demeter_30.png,Boon_Demeter_30,DemeterSpecialBoon,Ice Flourish
+Demeter_31.png,Boon_Demeter_31,DemeterManaBoon,Tranquil Gain
+Demeter_32.png,Boon_Demeter_32,CastNovaBoon,Arctic Gale
+Demeter_33.png,Boon_Demeter_33,ReserveManaHitShieldBoon,Snow Queen
+Demeter_34.png,Boon_Demeter_34,PlantHealthBoon,Plentiful Forage
+Demeter_35.png,Boon_Demeter_35,CastAttachBoon,Local Climate
+Demeter_36.png,Boon_Demeter_36,BoonGrowthBoon,Steady Growth
+Demeter_37.png,Boon_Demeter_37,ElementalDamageCapBoon,Frosty Veneer
+Demeter_38.png,Boon_Demeter_38,SlowExAttackBoon,Weed Killer
+Demeter_39.png,Boon_Demeter_39,RootDurationBoon,Cold Storage
+Demeter_40.png,Boon_Demeter_40,InstantRootKill,Winter Harvest
+Demeter_41.png,Boon_Demeter_41,KeepsakeLevelBoon,Cherished Heirloom
+Demeter_42.png,Boon_Demeter_42,MaxHealthDamageBoon,Hearty Appetite
+Demeter_43.png,Boon_Demeter_43,ClearRootBoon,Cryo Pounder
+Dionysus_27.png,Boon_Dionysus_27,CastLobBoon,Tipsy Shot
+Dionysus_28.png,Boon_Dionysus_28,CombatEncounterHealBoon,Bounce Back
+Dionysus_29.png,Boon_Dionysus_29,RandomBaseDamageBoon,Reckless Abandon
+Dionysus_30.png,Boon_Dionysus_30,FirstHangoverBoon,Drunken Stupor
+Dionysus_31.png,Boon_Dionysus_31,FogDamageBonusBoon,Happy Haze
+Dionysus_32.png,Boon_Dionysus_32,HiddenMaxHealthBoon,Worry Free
+Dionysus_33.png,Boon_Dionysus_33,PowerDrinkBoon,Bottomless Drink
+Dionysus_34.png,Boon_Dionysus_34,BankBoon,Personal Loan
+Echo_01.png,Boon_Echo_01,DiminishingDodgeBoon,Evade {#Echo1}Evade {#Prev}{#Echo2}Evade
+Echo_02.png,Boon_Echo_02,DiminishingHealthAndManaBoon,Fight {#Echo1}Fight {#Prev}{#Echo2}Fight
+Echo_03.png,Boon_Echo_03,EchoDeathDefianceRefill,Survive {#Echo1}Survive {#Prev}{#Echo2}Survive
+Echo_04.png,Boon_Echo_04,EchoLastReward,Reward {#Echo1}Reward {#Prev}{#Echo2}Reward
+Echo_05.png,Boon_Echo_05,EchoLastRunBoon,Boon {#Echo1}Boon {#Prev}{#Echo2}Boon
+Echo_06.png,Boon_Echo_06,EchoDoubleLevelBoon,Pom {#Echo1}Pom {#Prev}{#Echo2}Pom
+Echo_07.png,Boon_Echo_07,EchoRepeatKeepsakeBoon,{#Echo0}Gift {#Echo1}Gift {#Prev}{#Echo2}Gift
+Echo_08.png,Boon_Echo_08,EchoDoubleShop,Gold {#Echo1}Gold {#Prev}{#Echo2}Gold
+ErisCurseTrait.png,ErisCurseTrait,ErisCurseTrait,“Blessing” of Strife
+Hades_01.png,Boon_Hades_01,HadesCastProjectileBoon,Howling Soul
+Hades_02.png,Boon_Hades_02,HadesChronosDebuffBoon,Deep Dissent
+Hades_03.png,Boon_Hades_03,HadesDeathDefianceDamageBoon,Last Gasp
+Hades_04.png,Boon_Hades_04,HadesInvisibilityRetaliateBoon,Unseen Ire
+Hades_05.png,Boon_Hades_05,HadesLifestealBoon,Life Tax
+Hades_06.png,Boon_Hades_06,HadesPreDamageBoon,Old Grudge
+Hades_07.png,Boon_Hades_07,HadesManaUrnBoon,Cinerary Circle
+Hades_09.png,Boon_Hades_09,HadesDashSweepBoon,Gigaros Dash
+HammerAxe_27.png,Hammer_Axe_27,AxeArmorTrait,Melting Shredder
+HammerAxe_28.png,Hammer_Axe_28,AxeAttackRecoveryTrait,Rapid Hack
+HammerAxe_29.png,Hammer_Axe_29,AxeBlockEmpowerTrait,Siege Shredder
+HammerAxe_30.png,Hammer_Axe_30,AxeChargedSpecialTrait,Sudden Cleaver
+HammerAxe_32.png,Hammer_Axe_32,AxeDashAttackTrait,Dashing Heave
+HammerAxe_33.png,Hammer_Axe_33,AxeFreeSpinTrait,Psychic Whirlwind
+HammerAxe_34.png,Hammer_Axe_34,AxeMassiveThirdStrikeTrait,Executioner's Chop
+HammerAxe_35.png,Hammer_Axe_35,AxeRangedWhirlwindTrait,Seething Marauder
+HammerAxe_36.png,Hammer_Axe_36,AxeSecondStageTrait,Giga Cleaver
+HammerAxe_37.png,Hammer_Axe_37,AxeSpinSpeedTrait,Furious Whirlwind
+HammerAxe_38.png,Hammer_Axe_38,AxeSturdyTrait,Colossus Slash
+HammerAxe_39.png,Hammer_Axe_39,AxeThirdStrikeTrait,Hell Splitter
+HammerAxe_40.png,Hammer_Axe_40,DummyWeaponAxe;AxeRecoveryAspect,Aspect of Melinoë
+HammerAxe_41.png,Hammer_Axe_41,AxeArmCastAspect,Aspect of Charon
+HammerAxe_42.png,Hammer_Axe_42,AxePerfectCriticalAspect,Aspect of Thanatos
+HammerAxe_43.png,Hammer_Axe_43,AxeRallyAspect,Aspect of Nergal
+HammerAxe_44.png,Hammer_Axe_44,AxeRallyFrenzyTrait,Iron Core
+HammerAxe_45.png,Hammer_Axe_45,AxeRallyFirstStrikeTrait,Heaven Splitter
+HammerDaggers_27.png,Hammer_Daggers_27,DaggerAttackFinisherTrait,Final Slice
+HammerDaggers_28.png,Hammer_Daggers_28,DaggerBackstabTrait,Skulking Onslaught
+HammerDaggers_29.png,Hammer_Daggers_29,DaggerBlinkAoETrait,Sweeping Ambush
+HammerDaggers_30.png,Hammer_Daggers_30,DaggerChargeStageSkipTrait,Sudden Flurry
+HammerDaggers_31.png,Hammer_Daggers_31,DaggerFinalHitTrait,Wicked Onslaught
+HammerDaggers_32.png,Hammer_Daggers_32,DaggerRapidAttackTrait,Rapid Onslaught
+HammerDaggers_33.png,Hammer_Daggers_33,DaggerSpecialConsecutiveTrait,Melting Sickle
+HammerDaggers_34.png,Hammer_Daggers_34,DaggerSpecialFanTrait,Hidden Knives
+HammerDaggers_35.png,Hammer_Daggers_35,DaggerSpecialJumpTrait,Dancing Knives
+HammerDaggers_36.png,Hammer_Daggers_36,DaggerSpecialLineTrait,Sureshot Flurry
+HammerDaggers_37.png,Hammer_Daggers_37,DaggerSpecialReturnTrait,Reaper Knives
+HammerDaggers_38.png,Hammer_Daggers_38,DummyWeaponDagger;DaggerBackstabAspect,Aspect of Melinoë
+HammerDaggers_39.png,Hammer_Daggers_39,DaggerBlockAspect,Aspect of Artemis
+HammerDaggers_40.png,Hammer_Daggers_40,DaggerHomingThrowAspect,Aspect of Pan
+HammerDaggers_41.png,Hammer_Daggers_41,DaggerDashAttackTripleTrait,Trick Knives
+HammerDaggers_42.png,Hammer_Daggers_42,DaggerTripleAspect,Aspect of the Morrigan
+HammerDaggers_43.png,Hammer_Daggers_43,DaggerTripleBuffTrait,Phantom Brand
+HammerDaggers_44.png,Hammer_Daggers_44,DaggerTripleRepeatWomboTrait,Banshee Brand
+HammerDaggers_45.png,Hammer_Daggers_45,DaggerTripleHomingSpecialTrait,Sinister Pinion
+HammerLob_01.png,Hammer_Lob_01,LobAmmoMagnetismTrait,Fetching Array
+HammerLob_02.png,Hammer_Lob_02,LobAmmoTrait,Bolstered Array
+HammerLob_03.png,Hammer_Lob_03,LobGrowthTrait,Looming Ignition
+HammerLob_04.png,Hammer_Lob_04,LobInOutSpecialExTrait,Twisting Crash
+HammerLob_05.png,Hammer_Lob_05,LobOneSideTrait,Mega Driver
+HammerLob_06.png,Hammer_Lob_06,LobPulseAmmoCollectTrait,Possessed Array
+HammerLob_07.png,Hammer_Lob_07,LobPulseAmmoTrait,Volatile Array
+HammerLob_08.png,Hammer_Lob_08,LobRushArmorTrait,Melting Break
+HammerLob_09.png,Hammer_Lob_09,LobSpecialSpeedTrait,Rapid Driver
+HammerLob_10.png,Hammer_Lob_10,LobSpreadShotTrait,Wide Grin
+HammerLob_11.png,Hammer_Lob_11,LobStraightShotTrait,Boosted Ignition
+HammerLob_12.png,Hammer_Lob_12,LobSturdySpecialTrait,Colossus Driver
+HammerLob_13.png,Hammer_Lob_13,DummyWeaponLob;LobAmmoBoostAspect,Aspect of Melinoë
+HammerLob_14.png,Hammer_Lob_14,LobCloseAttackAspect,Aspect of Medea
+HammerLob_15.png,Hammer_Lob_15,LobImpulseAspect,Aspect of Persephone
+HammerLob_16.png,Hammer_Lob_16,LobGunAspect,Aspect of Hel
+HammerLob_17.png,Hammer_Lob_17,LobGunOverheatTrait,Venerated Relic
+HammerLob_18.png,Hammer_Lob_18,LobGunBounceTrait,Leering Glance
+HammerLob_20.png,Hammer_Lob_20,LobGunSpecialBounceTrait,Runic Driver
+HammerLob_21.png,Hammer_Lob_21,LobGunAttackRangeTrait,Garmr Gaze
+HammerLob_22.png,Hammer_Lob_22,LobGunAttackDoublerTrait,Helheim Charge
+HammerStaff_27.png,Hammer_Staff_27,StaffAttackRecoveryTrait,Rapid Thrasher
+HammerStaff_28.png,Hammer_Staff_28,StaffDashAttackTrait,Melting Swipe
+HammerStaff_29.png,Hammer_Staff_29,StaffDoubleAttackTrait,Wicked Thrasher
+HammerStaff_30.png,Hammer_Staff_30,StaffExAoETrait,Cross Cataclysm
+HammerStaff_31.png,Hammer_Staff_31,StaffExHealTrait,Vampiric Cataclysm
+HammerStaff_32.png,Hammer_Staff_32,StaffFastSpecialTrait,Rapid Moonshot
+HammerStaff_33.png,Hammer_Staff_33,StaffJumpSpecialTrait,Shimmering Moonshot
+HammerStaff_34.png,Hammer_Staff_34,StaffLongAttackTrait,Extending Wallop
+HammerStaff_35.png,Hammer_Staff_35,StaffOneWayAttackTrait,Mirrored Thrasher
+HammerStaff_36.png,Hammer_Staff_36,StaffPowershotTrait,Aetheric Moonburst
+HammerStaff_37.png,Hammer_Staff_37,StaffSecondStageTrait,Giga Moonburst
+HammerStaff_38.png,Hammer_Staff_38,StaffTripleShotTrait,Dual Moonshot
+HammerStaff_39.png,Hammer_Staff_39,DummyWeaponStaff;BaseStaffAspect,Aspect of Melinoë
+HammerStaff_40.png,Hammer_Staff_40,StaffClearCastAspect,Aspect of Circe
+HammerStaff_41.png,Hammer_Staff_41,StaffSelfHitAspect,Aspect of Momus
+HammerStaff_42.png,Hammer_Staff_42,StaffRaiseDeadAspect,Aspect of Anubis
+HammerStaff_43.png,Hammer_Staff_43,StaffRaiseDeadBigTrait,Soulfilled Ankh
+HammerStaff_44.png,Hammer_Staff_44,StaffRaiseDeadDoubleTrait,Mirrored Ankh
+HammerStaff_45.png,Hammer_Staff_45,StaffLoneShadeRespawnTrait,Scarab Etchings
+HammerStaff_46.png,Hammer_Staff_46,StaffLoneShadeRallyTrait,Pharaoh Etchings
+HammerSuit_01.png,Hammer_Suit_01,DummyWeaponSuit;BaseSuitAspect,Aspect of Melinoë
+HammerSuit_02.png,Hammer_Suit_02,SuitHexAspect,Aspect of Selene
+HammerSuit_03.png,Hammer_Suit_03,SuitMarkCritAspect,Aspect of Nyx
+HammerSuit_04.png,Hammer_Suit_04,SuitArmorTrait,Melting Cross
+HammerSuit_05.png,Hammer_Suit_05,SuitAttackSpeedTrait,Rapid Frame
+HammerSuit_06.png,Hammer_Suit_06,SuitAttackSizeTrait,Reaper Frame
+HammerSuit_07.png,Hammer_Suit_07,SuitAttackRangeTrait,Siege Frame
+HammerSuit_08.png,Hammer_Suit_08,SuitFullChargeTrait,World Collider
+HammerSuit_09.png,Hammer_Suit_09,SuitDashAttackTrait,Exhaust Riser
+HammerSuit_10.png,Hammer_Suit_10,SuitSpecialJumpTrait,Shimmering Rockets
+HammerSuit_11.png,Hammer_Suit_11,SuitSpecialStartUpTrait,Furious Rockets
+HammerSuit_12.png,Hammer_Suit_12,SuitSpecialAutoTrait,Launcher Frame
+HammerSuit_13.png,Hammer_Suit_13,SuitSpecialBlockTrait,Counter Barrage
+HammerSuit_14.png,Hammer_Suit_14,SuitSpecialDiscountTrait,Sudden Salvo
+HammerSuit_15.png,Hammer_Suit_15,SuitSpecialConsecutiveHitTrait,Ripper Rockets
+HammerSuit_16.png,Hammer_Suit_16,SuitComboAspect,Aspect of Shiva
+HammerSuit_17.png,Hammer_Suit_17,SuitPowershotTrait,Chakra Collider
+HammerSuit_18.png,Hammer_Suit_18,SuitComboForwardRocketTrait,Elephant Rockets
+HammerSuit_19.png,Hammer_Suit_19,SuitComboBlockBuffTrait,Counter Supreme
+HammerSuit_20.png,Hammer_Suit_20,SuitComboDoubleSpecialTrait,Awakened Rockets
+HammerSuit_21.png,Hammer_Suit_21,SuitComboDashAttackTrait,Mooncrest Riser
+HammerTorch_27.png,Hammer_Torch_27,TorchAttackSpeedTrait,Furious Blaze
+HammerTorch_28.png,Hammer_Torch_28,TorchDiscountExAttackTrait,Sudden Burst
+HammerTorch_29.png,Hammer_Torch_29,TorchEnhancedAttackTrait,Inverted Blaze
+HammerTorch_30.png,Hammer_Torch_30,TorchExSpecialCountTrait,Hidden Helix
+HammerTorch_31.png,Hammer_Torch_31,TorchLongevityTrait,Rising Helix
+HammerTorch_32.png,Hammer_Torch_32,TorchMoveSpeedTrait,Mega Blaze
+HammerTorch_33.png,Hammer_Torch_33,TorchOrbitPointTrait,Whirling Helix
+HammerTorch_34.png,Hammer_Torch_34,TorchSpecialImpactTrait,Enduring Coil
+HammerTorch_35.png,Hammer_Torch_35,TorchSpecialLineTrait,Melting Helix
+HammerTorch_36.png,Hammer_Torch_36,TorchSpecialSpeedTrait,Clean Coil
+HammerTorch_37.png,Hammer_Torch_37,TorchSpinAttackTrait,Leaden Blaze
+HammerTorch_38.png,Hammer_Torch_38,TorchSplitAttackTrait,Dividing Blaze
+HammerTorch_39.png,Hammer_Torch_39,DummyWeaponTorch;TorchSpecialDurationAspect,Aspect of Melinoë
+HammerTorch_40.png,Hammer_Torch_40,TorchDetonateAspect,Aspect of Moros
+HammerTorch_41.png,Hammer_Torch_41,TorchSprintRecallAspect,Aspect of Eos
+HammerTorch_42.png,Hammer_Torch_42,TorchAutofireAspect,Aspect of Supay
+HammerTorch_43.png,Hammer_Torch_43,TorchAutofireSprintTrait,Demonic Cell
+Hephaestus_27.png,Boon_Hephaestus_27,HephaestusWeaponBoon,Volcanic Strike
+Hephaestus_28.png,Boon_Hephaestus_28,HephaestusSprintBoon,Smithy Rush
+Hephaestus_29.png,Boon_Hephaestus_29,HephaestusCastBoon,Anvil Ring
+Hephaestus_30.png,Boon_Hephaestus_30,HephaestusSpecialBoon,Volcanic Flourish
+Hephaestus_31.png,Boon_Hephaestus_31,HephaestusManaBoon,Tough Gain
+Hephaestus_32.png,Boon_Hephaestus_32,ArmorBoon,Trusty Shield
+Hephaestus_33.png,Boon_Hephaestus_33,ManaToHealthBoon,Uncanny Fortitude
+Hephaestus_34.png,Boon_Hephaestus_34,ElementalDamageBoon,Martial Art
+Hephaestus_35.png,Boon_Hephaestus_35,MassiveKnockupBoon,Furnace Blast
+Hephaestus_36.png,Boon_Hephaestus_36,EncounterStartDefenseBuffBoon,Security System
+Hephaestus_37.png,Boon_Hephaestus_37,MassiveDamageBoon,Grand Caldera
+Hephaestus_38.png,Boon_Hephaestus_38,HeavyArmorBoon,Heavy Metal
+Hephaestus_39.png,Boon_Hephaestus_39,AntiArmorBoon,Molten Touch
+Hephaestus_40.png,Boon_Hephaestus_40,WeaponUpgradeBoon,Premium Service
+Hephaestus_41.png,Boon_Hephaestus_41,ManaShieldBoon,Brave Face
+Hephaestus_42.png,Boon_Hephaestus_42,SlamManaBurstBoon,Love Handles
+Hera_27.png,Boon_Hera_27,HeraWeaponBoon,Sworn Strike
+Hera_28.png,Boon_Hera_28,HeraSprintBoon,Nexus Rush
+Hera_29.png,Boon_Hera_29,HeraCastBoon,Engagement Ring
+Hera_30.png,Boon_Hera_30,HeraSpecialBoon,Sworn Flourish
+Hera_31.png,Boon_Hera_31,OmegaHeraProjectileBoon,Fine Line
+Hera_32.png,Boon_Hera_32,HeraManaBoon,Born Gain
+Hera_33.png,Boon_Hera_33,DamageShareRetaliateBoon,Extended Family
+Hera_34.png,Boon_Hera_34,ElementalRarityUpgradeBoon,Proper Upbringing
+Hera_35.png,Boon_Hera_35,LinkedDeathDamageBoon,Dying Wish
+Hera_36.png,Boon_Hera_36,BoonDecayBoon,Bridal Glow
+Hera_37.png,Boon_Hera_37,CommonGlobalDamageBoon,Uncommon Grace
+Hera_38.png,Boon_Hera_38,DamageSharePotencyBoon,Hereditary Bane
+Hera_40.png,Boon_Hera_40,AllElementalBoon,All Together
+Hera_47.png,Boon_Hera_47,SuperSacrificeBoonHera,Queen's Ransom
+Hera_48.png,Boon_Hera_48,SpawnCastDamageBoon,Rousing Reception
+Hermes_28.png,Boon_Hermes_28,SorcerySpeedBoon,Stutter Step
+Hermes_31.png,Boon_Hermes_31,HermesCastDiscountBoon,Winner's Circle
+Hermes_32.png,Boon_Hermes_32,RestockBoon,Travel Deal
+Hermes_33.png,Boon_Hermes_33,MoneyMultiplierBoon,Quick Buck
+Hermes_34.png,Boon_Hermes_34,LuckyBoon,Success Rate
+Hermes_35.png,Boon_Hermes_35,HermesSpecialBoon,Racing Thoughts
+Hermes_36.png,Boon_Hermes_36,TimedKillBuffBoon,Mean Streak
+Hermes_37.png,Boon_Hermes_37,DodgeChanceBoon,Hasty Retreat
+Hermes_38.png,Boon_Hermes_38,ElementalUnifiedBoon,Tall Order
+Hermes_39.png,Boon_Hermes_39,TimeStopLastStandBoon,Paid Dues
+Hermes_40.png,Boon_Hermes_40,HermesWeaponBoon,Nimble Limbs
+Hermes_41.png,Boon_Hermes_41,SlowProjectileBoon,Hard Target
+Hermes_42.png,Boon_Hermes_42,SprintShieldBoon,Nitro Boost
+Hestia_27.png,Boon_Hestia_27,HestiaWeaponBoon,Flame Strike
+Hestia_28.png,Boon_Hestia_28,HestiaSprintBoon,Heat Rush
+Hestia_29.png,Boon_Hestia_29,HestiaCastBoon,Smolder Ring
+Hestia_30.png,Boon_Hestia_30,HestiaSpecialBoon,Flame Flourish
+Hestia_31.png,Boon_Hestia_31,HestiaManaBoon,Cardio Gain
+Hestia_32.png,Boon_Hestia_32,ElementalBaseDamageBoon,Slow Cooker
+Hestia_33.png,Boon_Hestia_33,BurnSprintBoon,Fire Away
+Hestia_34.png,Boon_Hestia_34,FireballManaSpecialBoon,Controlled Burn
+Hestia_35.png,Boon_Hestia_35,OmegaZeroBurnBoon,Highly Flammable
+Hestia_36.png,Boon_Hestia_36,AloneDamageBoon,Snuffed Candle
+Hestia_37.png,Boon_Hestia_37,BurnArmorBoon,Hot Pot
+Hestia_39.png,Boon_Hestia_39,BurnExplodeBoon,Flash Fry
+Hestia_40.png,Boon_Hestia_40,BurnStackBoon,Pyro Technique
+Hestia_41.png,Boon_Hestia_41,ManaRestoreDamageBoon,Incandescent Aura
+Hestia_42.png,Boon_Hestia_42,CoverRegenerationBoon,Warm Breeze
+Hestia_43.png,Boon_Hestia_43,BurnConsumeBoon,Freezer Burn
+Hestia_44.png,Boon_Hestia_44,DoubleMassiveAttackBoon,Chain Reaction
+Hestia_45.png,Boon_Hestia_45,BurnRefreshBoon,Burning Desire
+Hestia_46.png,Boon_Hestia_46,SteamBoon,Scalding Vapor
+Hestia_47.png,Boon_Hestia_47,CastProjectileBoon,Glowing Coal
+Icarus_01.png,Boon_Icarus_01,BreakExplosiveArmorBoon,Volatile Coating
+Icarus_02.png,Boon_Icarus_02,BreakInvincibleArmorBoon,Protective Coating
+Icarus_03.png,Boon_Icarus_03,CastHazardBoon,Hazard Boom
+Icarus_04.png,Boon_Icarus_04,FocusAttackDamageTrait,Ingenious Strike
+Icarus_05.png,Boon_Icarus_05,FocusSpecialDamageTrait,Ingenious Flourish
+Icarus_06.png,Boon_Icarus_06,OmegaExplodeBoon,Explosive Intent
+Icarus_07.png,Boon_Icarus_07,SupplyDropBoon,Supply Chain
+Icarus_08.png,Boon_Icarus_08,UpgradeHammerBoon,Latest Model
+Medea_01.png,Boon_Medea_01,ArmorPenaltyCurse,Corrosion on Sight
+Medea_02.png,Boon_Medea_02,DeathDefianceRetaliateCurse,Malice in Kind
+Medea_03.png,Boon_Medea_03,HealingOnDeathCurse,Life from the Dead
+Medea_04.png,Boon_Medea_04,ManaOverTimeCurse,Traces of Spirit
+Medea_05.png,Boon_Medea_05,MoneyOnDeathCurse,Wealth from the Dead
+Medea_06.png,Boon_Medea_06,SlowProjectileCurse,Enfeeblement of Cowards
+Medea_07.png,Boon_Medea_07,SpawnDamageCurse,Suffering on Sight
+Medea_08.png,Boon_Medea_08,NewStatusDamage,Harm for the Afflicted
+Narcissus_01.png,Boon_Narcissus_01,NarcissusA,Verdure Sampler
+Narcissus_02.png,Boon_Narcissus_02,NarcissusB,Heartfelt Condolences
+Narcissus_03.png,Boon_Narcissus_03,NarcissusC,Precious Metals
+Narcissus_04.png,Boon_Narcissus_04,NarcissusD,Mystic Secrets
+Narcissus_05.png,Boon_Narcissus_05,NarcissusE,Ancestral Offering
+Narcissus_06.png,Boon_Narcissus_06,NarcissusF,Fates' Trimmings
+Narcissus_07.png,Boon_Narcissus_07,NarcissusG,Heavenly Splendor
+Narcissus_08.png,Boon_Narcissus_08,NarcissusH,Life Savings
+Narcissus_09.png,Boon_Narcissus_09,NarcissusI,Mixed Blessings
+NoChoiceMoney.png,Boon_No_Choice_Money,FallbackGold,Shared Wealth
+Poseidon_27.png,Boon_Poseidon_27,PoseidonWeaponBoon,Wave Strike
+Poseidon_28.png,Boon_Poseidon_28,PoseidonSprintBoon,Breaker Rush
+Poseidon_29.png,Boon_Poseidon_29,PoseidonCastBoon,Tidal Ring
+Poseidon_30.png,Boon_Poseidon_30,PoseidonSpecialBoon,Wave Flourish
+Poseidon_31.png,Boon_Poseidon_31,PoseidonManaBoon,Flood Gain
+Poseidon_32.png,Boon_Poseidon_32,FocusDamageShaveBoon,High Surf
+Poseidon_33.png,Boon_Poseidon_33,DoubleRewardBoon,Sea Star
+Poseidon_34.png,Boon_Poseidon_34,ElementalHealthBoon,Water Fitness
+Poseidon_36.png,Boon_Poseidon_36,RoomRewardBonusBoon,Buried Treasure
+Poseidon_37.png,Boon_Poseidon_37,PoseidonStatusBoon,Slippery Slope
+Poseidon_38.png,Boon_Poseidon_38,OmegaPoseidonProjectileBoon,Ocean Swell
+Poseidon_39.png,Boon_Poseidon_39,EncounterStartOffenseBuffBoon,Hydraulic Might
+Poseidon_40.png,Boon_Poseidon_40,AmplifyConeBoon,King Tide
+Poseidon_41.png,Boon_Poseidon_41,AllCloseBoon,Island Getaway
+Poseidon_42.png,Boon_Poseidon_42,GoodStuffBoon,Natural Selection
+Poseidon_43.png,Boon_Poseidon_43,MassiveCastBoon,Seismic Servo
+Poseidon_44.png,Boon_Poseidon_44,MoneyDamageBoon,Ripple Effect
+Poseidon_45.png,Boon_Poseidon_45,PoseidonSplashSprintBoon,Beach Ball
+Poseidon_46.png,Boon_Poseidon_46,PoseidonExCastBoon,Geyser Spout
+Selene_100.png,Boon_Selene_100,MeteorVulnerabilityDecalTalent,Softness
+Selene_101.png,Boon_Selene_101,MeteorDoubleTalent,Devastation
+Selene_102.png,Boon_Selene_102,MeteorExCastTalent,Excess
+Selene_103.png,Boon_Selene_103,TransformAttackSpeedTalent,Savagery
+Selene_104.png,Boon_Selene_104,TransformCastDamageTalent,Dominion
+Selene_105.png,Boon_Selene_105,TimeSlowLastStandRechargeTalent;TransformLastStandRechargeTalent,Contingency
+Selene_106.png,Boon_Selene_106,TransformSpecialCritTalent,Horror
+Selene_108.png,Boon_Selene_108,TransformPrimaryTalent,Resonance
+Selene_109.png,Boon_Selene_109,TransformSpecialTalent,Splendor
+Selene_110.png,Boon_Selene_110,SpellMoonBeamTrait,Sky Fall
+Selene_111.png,Boon_Selene_111,MoonBeamCountTalent,Brilliance
+Selene_112.png,Boon_Selene_112,MoonBeamDamageTalent,Sting
+Selene_113.png,Boon_Selene_113,MoonBeamVulnerabilityTalent,Omen
+Selene_114.png,Boon_Selene_114,MoonBeamConsecutiveDamageTalent,Ferocity
+Selene_115.png,Boon_Selene_115,MoonBeamDefenseTalent,Calm
+Selene_116.png,Boon_Selene_116,MoonBeamTargetTalent,Prism
+Selene_117.png,Boon_Selene_117,MoonBeamExBeamBonusTalent,Cascade
+Selene_118.png,Boon_Selene_118,MoonBeamPrimaryTalent,Ambition
+Selene_119.png,Boon_Selene_119,LaserStartAoETalent,Overflow
+Selene_120.png,Boon_Selene_120,LaserFirstHitDamageTalent,Contact
+Selene_121.png,Boon_Selene_121,PotionExCastTalent,Saturation
+Selene_122.png,Boon_Selene_122,MeteorChargeTalent,Consequence
+Selene_123.png,Boon_Selene_123,LaserApolloTalent,Shine of Apollo
+Selene_124.png,Boon_Selene_124,PolymorphZeusTalent,Temper of Zeus
+Selene_125.png,Boon_Selene_125,SummonHeraTalent,Nurture of Hera
+Selene_126.png,Boon_Selene_126,MeteorHestiaTalent,Hearth of Hestia
+Selene_127.png,Boon_Selene_127,TimeSlowDemeterTalent,Squall of Demeter
+Selene_128.png,Boon_Selene_128,TransformAphroditeTalent,Allure of Aphrodite
+Selene_129.png,Boon_Selene_129,LeapHephaestusTalent,Hand of Hephaestus
+Selene_130.png,Boon_Selene_130,PotionPoseidonTalent,Pride of Poseidon
+Selene_131.png,Boon_Selene_131,MoonBeamAresTalent,Lance of Ares
+Selene_132.png,Boon_Selene_132,OlympianSpellCountTalent,Lineage
+Selene_27.png,Boon_Selene_27,SpellTimeSlowTrait,Phase Shift
+Selene_28.png,Boon_Selene_28,SpellPolymorphTrait,Twilight Curse
+Selene_29.png,Boon_Selene_29,SpellLaserTrait,Lunar Ray
+Selene_30.png,Boon_Selene_30,SpellLeapTrait,Wolf Howl
+Selene_31.png,Boon_Selene_31,SpellPotionTrait,Moon Water
+Selene_32.png,Boon_Selene_32,SpellSummonTrait,Night Bloom
+Selene_33.png,Boon_Selene_33,SpellMeteorTrait,Total Eclipse
+Selene_34.png,Boon_Selene_34,SpellTransformTrait,Dark Side
+Selene_35.png,Boon_Selene_35,ChargeRegenTalent,Growth
+Selene_36.png,Boon_Selene_36,CooldownDamageTalent,Purpose
+Selene_37.png,Boon_Selene_37,CooldownDefenseTalent,Steadfastness
+Selene_38.png,Boon_Selene_38,TimeSlowAmountTalent,Patience
+Selene_39.png,Boon_Selene_39,PolymorphDurationTalent,Humility
+Selene_40.png,Boon_Selene_40,PolymorphDamageTalent,Exposure
+Selene_41.png,Boon_Selene_41,LaserDamageTalent,Intensity
+Selene_42.png,Boon_Selene_42,LaserDefenseTalent,Bearing
+Selene_43.png,Boon_Selene_43,PreChargeTalent,Preparation
+Selene_44.png,Boon_Selene_44,LeapArmorDamageTalent,Hunger
+Selene_45.png,Boon_Selene_45,LeapCooldownSpeedTalent,Urgency
+Selene_46.png,Boon_Selene_46,LeapDamageTalent,Instinct
+Selene_47.png,Boon_Selene_47,CurrencyUseTalent,Fortune
+Selene_48.png,Boon_Selene_48,HealAmountTalent,Vigor
+Selene_49.png,Boon_Selene_49,PotionManaRestoreTalent,Purity
+Selene_50.png,Boon_Selene_50,PotionUsesTalent,Abundance
+Selene_51.png,Boon_Selene_51,SummonDamageTalent,Devotion
+Selene_52.png,Boon_Selene_52,MeteorDamageTalent,Magnitude
+Selene_53.png,Boon_Selene_53,MeteorSizeTalent,Vastness
+Selene_55.png,Boon_Selene_55,TransformCooldownDodgeTalent,Tension
+Selene_56.png,Boon_Selene_56,TransformDamageTalent,Bloodthirst
+Selene_57.png,Boon_Selene_57,TransformDurationTalent,Focus
+Selene_58.png,Boon_Selene_58,TimeSlowCumulativeBuffTalent,Accumulation
+Selene_59.png,Boon_Selene_59,TimeSlowDestroyProjectilesTalent,Purification
+Selene_61.png,Boon_Selene_61,TimeSlowSpeedTalent,Alacrity
+Selene_62.png,Boon_Selene_62,TransformExCastTalent,Sanctity
+Selene_63.png,Boon_Selene_63,TimeSlowCritTalent,Precision
+Selene_64.png,Boon_Selene_64,TimeSlowFreezeTimeTalent,Stillness
+Selene_65.png,Boon_Selene_65,PolymorphDeathExplodeTalent,Extinction
+Selene_66.png,Boon_Selene_66,PolymorphTauntTalent,Spread
+Selene_67.png,Boon_Selene_67,PolymorphBossDamageTalent,Ambition
+Selene_68.png,Boon_Selene_68,PolymorphHealthCrushTalent,Decline
+Selene_69.png,Boon_Selene_69,PolymorphTeleportCastTalent,Orchestration
+Selene_70.png,Boon_Selene_70,PolymorphCurseTalent,Infection
+Selene_71.png,Boon_Selene_71,PolymorphSandwichTalent,Sustenance
+Selene_72.png,Boon_Selene_72,LaserDurationTalent,Obstinance
+Selene_73.png,Boon_Selene_73,LaserAoETalent,Dispersion
+Selene_74.png,Boon_Selene_74,LaserCrystalTalent,Prominence
+Selene_75.png,Boon_Selene_75,LaserPenetrationTalent,Exodus
+Selene_77.png,Boon_Selene_77,LaserTripleTalent,Trinity
+Selene_78.png,Boon_Selene_78,LeapAoETalent,Vicinity
+Selene_79.png,Boon_Selene_79,LeapCritTalent,Lethality
+Selene_80.png,Boon_Selene_80,LeapLaunchAoETalent,Duality
+Selene_81.png,Boon_Selene_81,LeapShieldTalent,Tenacity
+Selene_82.png,Boon_Selene_82,LeapSprintTalent,Tremor
+Selene_83.png,Boon_Selene_83,LeapTwiceTalent,Brutality
+Selene_84.png,Boon_Selene_84,ShieldTalent,Radiance
+Selene_85.png,Boon_Selene_85,DamageBuffTalent,Zeal
+Selene_86.png,Boon_Selene_86,HealLastTalent,Panacea
+Selene_87.png,Boon_Selene_87,RolloverUsesTalent,Conservation
+Selene_88.png,Boon_Selene_88,ClearCastTalent,Clarity
+Selene_89.png,Boon_Selene_89,HealRetaliateTalent,Tribulation
+Selene_90.png,Boon_Selene_90,SummonDamageSplitTalent,Selflessness
+Selene_91.png,Boon_Selene_91,SummonPermanenceTalent,Servitude
+Selene_92.png,Boon_Selene_92,SummonRetaliateTalent,Retaliation
+Selene_93.png,Boon_Selene_93,SummonSpeedTalent,Rigor
+Selene_94.png,Boon_Selene_94,SummonTeleportTalent,Confluence
+Selene_95.png,Boon_Selene_95,SummonExplodeTalent,Eruption
+Selene_97.png,Boon_Selene_97,MeteorInvulnerableChargeTalent,Eminence
+Selene_98.png,Boon_Selene_98,MeteorShowerTalent,Fragmentation
+Selene_99.png,Boon_Selene_99,MeteorSlowDecalTalent,Numbness
+Trait_InfernalContract.png,Trait_InfernalContract,InfernalContractBoon,Champion of Elysium *
+Trait_StorePendingDeliveryItem.png,Trait_StorePendingDeliveryItem,StorePendingDeliveryItem,Special Order
+Trait_SurfacePenalty.png,Trait_SurfacePenalty,SurfacePenalty,Chthonic Fate
+Trait_UnusedWeaponBonus.png,Trait_UnusedWeaponBonus,UnusedWeaponBonusTrait,Grave Thirst
+Trait_UnusedWeaponBonus2.png,Trait_UnusedWeaponBonus2,UnusedWeaponBonusTrait2,Gravest Thirst
+Zeus_27.png,Boon_Zeus_27,ZeusWeaponBoon,Heaven Strike
+Zeus_28.png,Boon_Zeus_28,ZeusSprintBoon,Thunder Rush
+Zeus_29.png,Boon_Zeus_29,ZeusCastBoon,Storm Ring
+Zeus_30.png,Boon_Zeus_30,ZeusSpecialBoon,Heaven Flourish
+Zeus_31.png,Boon_Zeus_31,ElementalDamageFloorBoon,Air Quality
+Zeus_32.png,Boon_Zeus_32,FocusLightningBoon,Static Shock
+Zeus_33.png,Boon_Zeus_33,BoltRetaliateBoon,Divine Vengeance
+Zeus_34.png,Boon_Zeus_34,ZeusManaBoon,Ionic Gain
+Zeus_36.png,Boon_Zeus_36,ZeusManaBoltBoon,Power Surge
+Zeus_37.png,Boon_Zeus_37,DoubleBoltBoon,Double Strike
+Zeus_38.png,Boon_Zeus_38,EchoExpirationBoon,Arc Flash
+Zeus_39.png,Boon_Zeus_39,SpawnKillBoon,Shocking Loss
+Zeus_40.png,Boon_Zeus_40,LightningDebuffGeneratorBoon,Electric Overload
+Zeus_41.png,Boon_Zeus_41,ApolloSecondStageCastBoon,Glorious Disaster
+Zeus_42.png,Boon_Zeus_42,RootStrikeBoon,Hail Storm
+Zeus_43.png,Boon_Zeus_43,EchoBurnBoon,Thermal Dynamics
+Zeus_44.png,Boon_Zeus_44,LightningVulnerabilityBoon,Killer Current
+Zeus_45.png,Boon_Zeus_45,ReboundingSparkBoon,Master Conductor
+Zeus_46.png,Boon_Zeus_46,SprintEchoBoon,Romantic Spark
+Zeus_47.png,Boon_Zeus_47,SuperSacrificeBoonZeus,King's Ransom
+Zeus_48.png,Boon_Zeus_48,CastAnywhereBoon,Lightning Lance
+familiars_cat_01.png,,,Toula
+familiars_frog_01,,,Frinos
+familiars_hound_01.png,,,Hecuba
+familiars_polecat_01.png,,,Gale
+familiars_raven_01.png,,,Raki
+Jpom,,,Jeweled Pom
+Attack,,,Empty
+Special,,,Empty
+Cast,,,Empty
+Sprint,,,Empty
+Magick,,,Empty

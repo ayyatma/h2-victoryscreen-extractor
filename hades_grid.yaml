@@ -1,0 +1,6 @@
+
+path: /home/ayyatma/projects/h2_icon/datasets/hades_grid
+train: images
+val: images
+names:
+  0: boon_slot
