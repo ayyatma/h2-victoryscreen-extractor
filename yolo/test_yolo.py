@@ -4,7 +4,7 @@ import glob
 import os
 
 MODEL_PATH = 'runs/detect/train/weights/best.pt'
-INPUT_FOLDER = "vic_screens"
+INPUT_FOLDER = "../vic_screens"
 OUTPUT_FOLDER = "debug_yolo_clean"
 
 def main():

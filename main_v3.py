@@ -14,44 +14,45 @@ from ultralytics import YOLO
 # ==========================================
 
 # --- DIRECTORIES ---
-ASSETS_DIR = "assets"  # <--- Put model, overlays, csv, and icons here
+ASSETS_DIR = "assets"
 INPUT_DIR = "vic_screens"
 DEBUG_DIR = "debug_output"
-DEBUG_MODE = False  # Set to True to enable debug visuals
 
-# --- FILE PATHS (Relative to ASSETS_DIR) ---
+# --- FILE PATHS ---
 MODEL_FILE = "best.pt"
 MAPPING_FILE = "iconname_code_display.csv"
 PIN_OVERLAY_FILE = "pin_overlay.png"
 RANK_FILES = ["rank_1.png", "rank_2.png", "rank_3.png", "rank_4.png"]
 REF_ICONS_SUBDIR = "reference_icons"
-OUTPUT_CSV = "hades_run_data.csv" # Saved to root
+OUTPUT_CSV = "hades_run_data.csv"
 
-# --- IMAGE PROCESSING CONSTANTS ---
-TARGET_ICON_SIZE = (90, 90)  # Standard size for reference icons
-MATCH_SCENE_WIDTH = int(TARGET_ICON_SIZE[0] * 1.15)      # Width to resize game crop to before matching to allow alignment errors
-MATCH_SCALES = [0.7, 0.8, 0.9, 1.0, 1.1] # Scales to test during template matching
+# --- DEBUGGING DEFAULT ---
+DEBUG_MODE = False
 
-# --- MATCHING REGIONS (y_start, y_end, x_start, x_end) ---
-# These coordinates are relative to the TARGET_ICON_SIZE (90x90)
+# --- IMAGE PROCESSING ---
+TARGET_ICON_SIZE = (90, 90)
+MATCH_SCENE_WIDTH = int(TARGET_ICON_SIZE[0] * 1.15) 
+MATCH_SCALES = [0.7, 0.8, 0.9, 1.0, 1.1]
+
+# --- MATCHING REGIONS ---
 TEMPLATE_REGIONS = {
-    "head":  (15, 57, 30, 75), # Green: Safe Top-Right (Avoids Pin)
-    "heart": (25, 57, 20, 80), # Blue: Safe Center (Avoids Text & Pin)
-    "broad": (15, 80, 15, 85)  # Red:  Risky Full Body (Catches everything)
+    "head":  (15, 57, 30, 75), 
+    "heart": (25, 57, 20, 80), 
+    "broad": (15, 80, 15, 85)
 }
 
 # --- THRESHOLDS ---
-THRESH_YOLO_CONF = 0.4       # Minimum confidence to detect a slot
-THRESH_TEMPLATE_MIN = 0.4    # Minimum score to even consider a candidate
-THRESH_SCORE_HIGH = 0.70     # Instant win score
-THRESH_SCORE_MED = 0.65      # Win score IF gap is big enough
-THRESH_GAP_MIN = 0.05        # Minimum gap required for medium scores
+THRESH_YOLO_CONF = 0.4
+THRESH_TEMPLATE_MIN = 0.4
+THRESH_SCORE_HIGH = 0.70
+THRESH_SCORE_MED = 0.65
+THRESH_GAP_MIN = 0.05
 
 # --- LOGIC CONSTANTS ---
 COL0_STRUCTURE = { 0: "aspects", 1: "familiars", 2: "attacks", 3: "specials", 4: "casts", 5: "sprints", 6: "gains" }
 COL0_DEFAULTS = { "aspects": "Aspect", "familiars": "Familiar", "attacks": "Attack", "specials": "Special", "casts": "Cast", "sprints": "Sprint", "gains": "Magick" }
 
-# --- REGEX (Compiled for Speed) ---
+# --- REGEX ---
 RE_PINNED = re.compile(r'_PINNED')
 RE_RANK = re.compile(r'_RANK_\d+')
 RE_CLEAN_DEBUG = re.compile(r'[^\w\-\_\. ]')
@@ -62,26 +63,21 @@ RE_CLEAN_DEBUG = re.compile(r'[^\w\-\_\. ]')
 # ==========================================
 
 def get_asset_path(filename):
-    """Helper to construct paths relative to ASSETS_DIR"""
     return os.path.join(ASSETS_DIR, filename)
 
 def clean_name_internal(internal_name):
-    """Removes _PINNED and _RANK suffixes to get the base key."""
     name = RE_PINNED.sub('', internal_name)
     name = RE_RANK.sub('', name)
     return name
 
 def get_display_name(internal_name, mapping):
-    """Returns the human-readable name from CSV mapping."""
     if internal_name == "unknown": return "UNKNOWN"
     base_key = clean_name_internal(internal_name)
     return mapping.get(base_key, base_key)
 
 def overlay_image_alpha(img, overlay, opacity=1.0):
-    """Blends an overlay (like a pin) onto an icon with alpha transparency."""
     h, w = img.shape[:2]
-    if overlay.shape[:2] != (h, w): 
-        overlay = cv2.resize(overlay, (w, h))
+    if overlay.shape[:2] != (h, w): overlay = cv2.resize(overlay, (w, h))
         
     if img.shape[2] == 4:
         img_bgr, img_alpha = img[:, :, :3], img[:, :, 3] / 255.0
@@ -97,9 +93,7 @@ def overlay_image_alpha(img, overlay, opacity=1.0):
     safe_alpha = np.maximum(out_alpha, 1e-6)
     out_bgr = (ov_bgr * ov_alpha[:, :, None] + img_bgr * img_alpha[:, :, None] * (1 - ov_alpha)[:, :, None]) / safe_alpha[:, :, None]
     
-    return cv2.merge([
-        np.clip(out_bgr, 0, 255).astype(np.uint8)[:,:,i] for i in range(3)
-    ] + [np.clip(out_alpha * 255, 0, 255).astype(np.uint8)])
+    return cv2.merge([np.clip(out_bgr, 0, 255).astype(np.uint8)[:,:,i] for i in range(3)] + [np.clip(out_alpha * 255, 0, 255).astype(np.uint8)])
 
 
 # ==========================================
@@ -107,12 +101,10 @@ def overlay_image_alpha(img, overlay, opacity=1.0):
 # ==========================================
 
 def ensure_variants_exist():
-    """Generates _PINNED.png and _RANK_X.png variants in the assets folder."""
     print("🔨 Checking/Generating Variants...")
     pin_path = get_asset_path(PIN_OVERLAY_FILE)
-    
     if not os.path.exists(pin_path): 
-        print(f"⚠️ Pin overlay not found at {pin_path}. Skipping variants.")
+        print(f"⚠️ Pin overlay missing at {pin_path}. Skipping.")
         return
     
     pin_overlay = cv2.imread(pin_path, cv2.IMREAD_UNCHANGED)
@@ -145,19 +137,15 @@ def ensure_variants_exist():
             img = cv2.imread(f, cv2.IMREAD_UNCHANGED)
             if img is None: continue
             
-            # Generate Pinned (0.3 opacity)
             cv2.imwrite(os.path.join(path, f"{name}_PINNED.png"), overlay_image_alpha(img, pin_overlay, 0.3))
             count += 1
             
-            # Generate Ranks
             if is_keepsake and rank_overlays:
                 for r_key, r_img in rank_overlays.items():
                     ranked = overlay_image_alpha(img, r_img, 1.0)
                     cv2.imwrite(os.path.join(path, f"{name}_RANK_{r_key}.png"), ranked)
-                    cv2.imwrite(os.path.join(path, f"{name}_PINNED_RANK_{r_key}.png"), 
-                                overlay_image_alpha(ranked, pin_overlay, 0.3))
+                    cv2.imwrite(os.path.join(path, f"{name}_PINNED_RANK_{r_key}.png"), overlay_image_alpha(ranked, pin_overlay, 0.3))
                     count += 2
-                    
     if count: print(f"✨ Generated {count} new variants.")
 
 def load_icon_folder(path):
@@ -182,23 +170,17 @@ def load_icon_folder(path):
 
 def load_resources():
     print("⏳ Loading AI Models & Resources...")
-    
-    # Check ASSETS_DIR
     if not os.path.exists(ASSETS_DIR):
         print(f"❌ ERROR: Assets directory '{ASSETS_DIR}' not found!")
         exit()
 
-    # Load YOLO
     model_path = get_asset_path(MODEL_FILE)
     if not os.path.exists(model_path):
         print(f"❌ ERROR: Model not found at {model_path}")
         exit()
     grid_model = YOLO(model_path)
-    
-    # Load OCR
     text_reader = easyocr.Reader(['en'], gpu=True)
     
-    # Load Mapping
     mapping = {}
     mapping_path = get_asset_path(MAPPING_FILE)
     if os.path.exists(mapping_path):
@@ -206,9 +188,8 @@ def load_resources():
         mapping = {str(row['icon_filename']).replace('.png', ''): str(row['display_text']) 
                    for _, row in df.iterrows()}
     else:
-        print(f"⚠️ Mapping file not found at {mapping_path}. Using raw filenames.")
+        print(f"⚠️ Mapping file not found at {mapping_path}.")
 
-    # Load Icons
     libs = {}
     master = {}
     ref_base = get_asset_path(REF_ICONS_SUBDIR)
@@ -222,7 +203,6 @@ def load_resources():
     master.update(libs["boons"])
     master.update(libs["keepsakes"])
     
-    # Optimized Overflow Library
     libs["overflow_merged"] = {**libs["boons"], **libs["keepsakes"]}
     
     print(f"✅ Loaded {len(master)} icons.")
@@ -232,6 +212,54 @@ def load_resources():
 # ==========================================
 #           4. CORE LOGIC
 # ==========================================
+
+def detect_environment(img):
+    h, w = img.shape[:2]
+    banner = img[:int(h*0.15), :]
+    return "Underworld" if np.mean(banner[:,:,1]) > (np.mean(banner[:,:,2]) + 30) else "Surface"
+
+def get_stats(reader, img):
+    """
+    UPGRADED V3 LOGIC
+    Supports XX:XX,XX format (Minutes:Seconds,Milliseconds)
+    """
+    h, w = img.shape[:2]
+    stats = {'Clear Time': 'Unknown', 'Fear': '0'}
+    
+    # 1. Coordinate Logic (From main_v3.py)
+    y1, y2 = int(h*0.15), int(h*0.35)
+    x1, x2 = int(w*0.75), w
+    
+    crop = img[y1:y2, x1:x2]
+    
+    # 2. EasyOCR with Allowlist
+    res = reader.readtext(crop, detail=0, allowlist='0123456789:.,UsedFar ')
+    full_text = "".join(res)
+    
+    # 3. Regex (Upgraded to capture milliseconds)
+    # Matches: "12:34" OR "12:34,56" OR "12.34.56"
+    time_match = re.search(r'(\d{1,2})[:.,](\d{2})([:.,]\d{2})?', full_text)
+    
+    if time_match:
+        part1 = time_match.group(1) # Minutes
+        part2 = time_match.group(2) # Seconds
+        part3 = time_match.group(3) # Milliseconds (optional)
+        
+        if part3:
+            # Clean up separator in part3 (e.g., ",56" -> ".56")
+            ms = part3.replace(',', '.').replace(':', '.')
+            stats['Clear Time'] = f"{part1}:{part2}{ms}"
+        else:
+            stats['Clear Time'] = f"{part1}:{part2}"
+        
+    for t in res:
+        fm = re.search(r'Used.*?(\d+)', t)
+        if fm: 
+            stats['Fear'] = fm.group(1)
+        elif t.isdigit() and len(t)<4 and stats['Fear']=='0': 
+            stats['Fear'] = t
+            
+    return stats, (x1, y1, x2, y2)
 
 def match_icon_specific(crop_img, library, master_lib, mapping, debug_label):
     if not library: return "unknown"
@@ -247,7 +275,6 @@ def match_icon_specific(crop_img, library, master_lib, mapping, debug_label):
     for name, ref in library.items():
         best_tmpl_score = 0.0
         
-        # Iterate over Dynamic Configured Regions
         for region_name, (y1, y2, x1, x2) in TEMPLATE_REGIONS.items():
             tmpl = ref[y1:y2, x1:x2]
             
@@ -278,9 +305,10 @@ def match_icon_specific(crop_img, library, master_lib, mapping, debug_label):
     if best_score > THRESH_SCORE_HIGH or (best_score > THRESH_SCORE_MED and gap > THRESH_GAP_MIN): 
         return best_name
     
-    print(f"⚠️  [DEBUG] '{debug_label}' Unmatched (Best: {best_score:.3f}, Gap: {gap:.3f}). Candidates:")
-    for s, n in candidates[:3]: 
-        print(f"      - {get_display_name(n, mapping)}: {s:.3f}")
+    if DEBUG_MODE:
+        print(f"⚠️  [DEBUG] '{debug_label}' Unmatched (Best: {best_score:.3f}, Gap: {gap:.3f}). Candidates:")
+        for s, n in candidates[:3]: 
+            print(f"      - {get_display_name(n, mapping)}: {s:.3f}")
     
     if master_lib: 
         return match_icon_specific(crop_img, master_lib, None, mapping, debug_label + " (FB)")
@@ -335,19 +363,6 @@ def analyze_grid_structure(slots, img_h):
         'anchor_cy': anchor_y
     }
 
-def get_stats(reader, img):
-    h, w = img.shape[:2]
-    stats = {'Clear Time': 'Unknown', 'Fear': '0'}
-    crop = img[int(h*0.15):int(h*0.35), int(w*0.75):w]
-    res = reader.readtext(crop, detail=0, allowlist='0123456789:.,UsedFar ')
-    text_blob = "".join(res)
-    tm = re.search(r'(\d{1,2})[:.,](\d{2})', text_blob)
-    if tm: stats['Clear Time'] = f"{tm.group(1)}:{tm.group(2)}"
-    for t in res:
-        fm = re.search(r'Used.*?(\d+)', t)
-        if fm: stats['Fear'] = fm.group(1)
-    return stats
-
 
 # ==========================================
 #         5. VISUALIZATION & DEBUG
@@ -359,11 +374,11 @@ def setup_debug_folder():
         os.makedirs(DEBUG_DIR)
         os.makedirs(os.path.join(DEBUG_DIR, "crops"))
 
-def visualize_grid_logic(img, slots, debug_info, filename, slot_labels=None, save=True):
+def visualize_grid_logic(img, slots, debug_info, filename, slot_labels=None, stats_box=None, stats_text=None, save=True):
     vis = img.copy()
     ref_w, ref_h = TARGET_ICON_SIZE
 
-    # Draw Grid
+    # Grid Lines
     for col_x in debug_info.get('col_centers', []):
         cv2.line(vis, (int(col_x), 0), (int(col_x), img.shape[0]), (255, 0, 0), 1)
 
@@ -374,50 +389,50 @@ def visualize_grid_logic(img, slots, debug_info, filename, slot_labels=None, sav
         cv2.line(vis, (0, y), (img.shape[1], y), (0, 255, 0), 1)
         cv2.putText(vis, f"R{i}", (10, y-5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
+    # Slots
     for s in slots:
         x, y, w, h = s['bbox']
         color = (0, 0, 255) if s['col'] == 0 else (0, 255, 255) 
         cv2.rectangle(vis, (x, y), (x+w, y+h), color, 2)
         
-        # DYNAMICALLY DRAW TEMPLATE ZONES (Based on Config)
-        # Colors: Just cycling through basic colors for distinctness
-        colors = [(0, 255, 0), (255, 200, 0), (0, 0, 255)] # Green, Cyan, Red
-        
+        colors = [(0, 255, 0), (255, 200, 0), (0, 0, 255)]
         for idx, (r_name, (y1, y2, x1, x2)) in enumerate(TEMPLATE_REGIONS.items()):
-            # Scale coordinates from Reference Size (90) to Actual Slot Size (w)
             draw_x1 = int(x + (x1 / ref_w * w))
-            draw_y1 = int(y + (y1 / ref_h * w)) # Assuming square aspect ratio for zones
+            draw_y1 = int(y + (y1 / ref_h * w))
             draw_x2 = int(x + (x2 / ref_w * w))
             draw_y2 = int(y + (y2 / ref_h * w))
-            
             c = colors[idx % len(colors)]
             cv2.rectangle(vis, (draw_x1, draw_y1), (draw_x2, draw_y2), c, 1)
 
-        # Labels
         label_text = f"C{s.get('col_cluster','?')}:R{s['row']}"
         if slot_labels and tuple(s['bbox']) in slot_labels:
             clean_name = slot_labels[tuple(s['bbox'])]
             label_text += f" {clean_name}"
         cv2.putText(vis, label_text, (x, y+h+15), cv2.FONT_HERSHEY_SIMPLEX, 0.4, color, 1)
 
+    # Stats Debug Box (Purple)
+    if stats_box:
+        x1, y1, x2, y2 = stats_box
+        cv2.rectangle(vis, (x1, y1), (x2, y2), (255, 0, 255), 2)
+        if stats_text:
+            cv2.putText(vis, stats_text, (x1, y2+25), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 255), 2)
+
     if save:
         cv2.imwrite(os.path.join(DEBUG_DIR, f"DEBUG_{filename}"), vis)
+
 
 # ==========================================
 #              6. MAIN EXECUTION
 # ==========================================
 
 def main():
-    # --- ARGUMENT PARSING ---
-    parser = argparse.ArgumentParser(description="Hades II Icon Detector")
-    parser.add_argument("-d", "--debug", action="store_true", help="Enable debug mode (save crops and visual grids)")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-d", "--debug", action="store_true", help="Enable debug mode")
     args = parser.parse_args()
     
-    # Override Global DEBUG_MODE based on CLI flag
     global DEBUG_MODE
     DEBUG_MODE = args.debug
 
-    # --- STARTUP ---
     if not os.path.exists(ASSETS_DIR):
         print(f"❌ Critical Error: '{ASSETS_DIR}' directory not found.")
         return
@@ -433,7 +448,6 @@ def main():
         return
 
     all_data = []
-
     print(f"🚀 Processing {len(files)} files (Debug Mode: {DEBUG_MODE})...")
 
     for i, f in enumerate(files):
@@ -448,9 +462,11 @@ def main():
         ]
         
         structured_slots, debug_info = analyze_grid_structure(raw_slots, img.shape[0])
-        stats = get_stats(text_reader, img)
         
-        row_data = { "Filename": filename, "Clear Time": stats['Clear Time'], "Fear": stats['Fear'] }
+        stats, stats_box = get_stats(text_reader, img)
+        env = detect_environment(img)
+        
+        row_data = { "Filename": filename, "Region": env, "Clear Time": stats['Clear Time'], "Fear": stats['Fear'] }
         boons_disp = []
         other_boons_raw = []
         debug_crops = []
@@ -466,11 +482,14 @@ def main():
                 cat = COL0_STRUCTURE.get(slot['row'])
                 if cat:
                     label = f"C0_R{slot['row']}"
-                    matched = match_icon_specific(crop, libraries.get(cat), master_lib, mapping, label)
+                    # Strict Core Matching (No master_lib)
+                    matched = match_icon_specific(crop, libraries.get(cat), None, mapping, label)
                     row_data[COL0_DEFAULTS[cat]] = matched
             else:
                 label = f"OV_C{slot.get('cc')}"
+                # Flexible Overflow Matching
                 matched = match_icon_specific(crop, libraries["overflow_merged"], master_lib, mapping, label)
+                
                 if matched != "unknown":
                     other_boons_raw.append(matched)
                     boons_disp.append(f"[C{slot.get('cc')}:R{slot['row']}] {get_display_name(matched, mapping)}")
@@ -490,9 +509,12 @@ def main():
             for crop_img, base_filename, lab, d_name, in debug_crops:
                 clean_label = RE_CLEAN_DEBUG.sub('_', f"{lab}_{d_name}")
                 cv2.imwrite(os.path.join(DEBUG_DIR, "crops", f"{base_filename}_{clean_label}.png"), crop_img)
-            visualize_grid_logic(img, structured_slots, debug_info, filename, slot_labels=slot_labels, save=True)
+            
+            stats_str = f"Time: {stats['Clear Time']} | Fear: {stats['Fear']}"
+            visualize_grid_logic(img, structured_slots, debug_info, filename, 
+                               slot_labels=slot_labels, stats_box=stats_box, stats_text=stats_str, save=True)
 
-        print(f"[{i+1}] {filename} | ⏱️ {stats['Clear Time']} | 💀 {stats['Fear']}")
+        print(f"[{i+1}] {filename} ({env}) | ⏱️ {stats['Clear Time']} | 💀 {stats['Fear']}")
         print(f"   Core:  {[get_display_name(row_data.get(COL0_DEFAULTS[COL0_STRUCTURE[r]], 'unknown'), mapping) for r in range(7)]}")
         print(f"   Other: {boons_disp}\n" + "-"*60)
 

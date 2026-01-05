@@ -4,8 +4,8 @@ import os
 import glob
 
 # --- INPUT / OUTPUT ---
-INPUT_DIR = "vic_screens"
-OUTPUT_DIR = "debug_labels_filtered" # New folder to compare
+INPUT_DIR = "../vic_screens"
+OUTPUT_DIR = "debug_labels" # New folder to compare
 
 GRID_CONFIG = {
     "start_x": 10, "start_y": 198, 

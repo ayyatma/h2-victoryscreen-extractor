@@ -8,6 +8,8 @@ debug_yolo_clean/
 
 runs/
 
+yolo/hades_grid/*
+
 support/
 
 datasets/

@@ -4,8 +4,8 @@ import os
 import glob
 
 # --- INPUT / OUTPUT ---
-INPUT_DIR = "vic_screens"
-DATASET_DIR = "datasets/hades_grid"
+INPUT_DIR = "../vic_screens"
+DATASET_DIR = "hades_grid"
 
 IMG_OUTPUT_DIR = os.path.join(DATASET_DIR, "images")
 LABEL_OUTPUT_DIR = os.path.join(DATASET_DIR, "labels")
