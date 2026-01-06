@@ -1,11 +1,12 @@
 # Hades II Icon Detector
 
-An automated computer vision tool that extracts run data from *Hades II* victory screens. It uses YOLOv8 for grid detection and advanced Template Matching to identify Boons, Aspects, Keepsakes, and Familiars with high accuracy—even when pinned or ranked.
+An automated computer vision tool that extracts run data from *Hades II* victory screens. It uses YOLOv8 for grid detection, advanced Template Matching for icon identification, and Fuzzy OCR for robust stat extraction.
 
 ## Features
-* **Auto-Detection:** Identifies the Aspect, Familiar, and all Boons/Upgrades from a screenshot.
-* **Stat Extraction:** Reads "Clear Time" and "Fear" levels using OCR.
-* **Smart Matching:** Handles "Pinned" icons, Ranks, and text overlays using multi-zone template matching.
+* **Auto-Detection:** Identifies Aspects, Familiars, and Boons using multi-zone template matching.
+* **Robust OCR:** Extracts "Clear Time" and "Fear" using **Smart Binarization** and **Fuzzy String Matching** to handle typos and low contrast.
+* **Dynamic Variant Generation:** Automatically generates "Pinned" and "Ranked" variants of reference icons to ensure accurate matching.
+* **Spatial Parsing:** Locates stat values relative to their labels dynamically, handling shifting UI elements.
 * **CSV Export:** Outputs all run data into a clean `hades_run_data.csv`.
 
 ## 📦 Setup
@@ -16,11 +17,10 @@ An automated computer vision tool that extracts run data from *Hades II* victory
     ```
 
 2.  **Download Assets**
-    This tool requires a specific set of reference images and models to work.
     * **Reference Database:** [Download Here](https://drive.google.com/uc?export=download&id=1nKrHEYRW5VM06OpFXZVCWk4zZtxYDGKB)
 
 3.  **Project Structure**
-    Extract the downloaded assets and ensure your folder looks exactly like this:
+    Ensure your folder looks exactly like this:
     ```text
     Project_Folder/
     ├── main.py                # The script
@@ -35,7 +35,31 @@ An automated computer vision tool that extracts run data from *Hades II* victory
 
 ## 🎮 Usage
 
-**1. Standard Run (Fast)**
-Processes all images in `vic_screens/` and saves data to CSV.
+Run the script from your terminal:
+
+```bash
+python main.py [options]
+```
+
+### Options
+| Flag | Description |
+| :--- | :--- |
+| **None** | Standard run. Processes all images in `vic_screens/` and saves to CSV. |
+| `-d`, `--debug` | **Debug Mode.** Saves visual overlays (grid/OCR boxes) and individual icon crops to `debug_output/`. |
+| `--gpu` | **GPU Acceleration.** Forces YOLO and EasyOCR to use CUDA (if available) for faster processing. |
+
+### Examples
+**Standard Run:**
 ```bash
 python main.py
+```
+
+**Run with Debug Visuals:**
+```bash
+python main.py --debug
+```
+
+**Run on GPU:**
+```bash
+python main.py --gpu
+```

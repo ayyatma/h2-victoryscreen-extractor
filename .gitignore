@@ -1,20 +1,21 @@
 __pycache__/
 .github/
 debug_grids/
-debug_labels/
-debug_labels_filtered/
-debug_output/
-debug_yolo_clean/
+debug_*/
+test_output/
 
 runs/
 
 yolo/hades_grid/*
-
+yolo_v2/
 support/
 
 datasets/
 reference_icons/
 vic_screens/*
+vic_debug/
 
 *.7z
 hades_run_data.csv
+
+/main_v3.py
